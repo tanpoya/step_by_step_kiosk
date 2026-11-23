@@ -1,0 +1,70 @@
+{
+  "scenarioId": "cafe_m3",
+  "store": "cafe",
+  "title": "아이스 바닐라라떼 M 사이즈 2잔, 매장에서 마시기",
+  "steps": [
+    {
+      "id": "start",
+      "screen": "kiosk_start",
+      "guide": "매장에서 드실지, 포장하실지 골라 주세요",
+      "expect": "start:dinein",
+      "hint": "오늘은 '매장'을 눌러 보세요"
+    },
+    {
+      "id": "menu",
+      "screen": "menu",
+      "guide": "'바닐라라떼'를 눌러 보세요",
+      "expect": "menu:vanilla_latte",
+      "hint": "커피 탭 둘째 줄 왼쪽에 있어요"
+    },
+    {
+      "id": "temp",
+      "screen": "option",
+      "guide": "차가운 음료를 고르세요",
+      "expect": "opt:temp=ice",
+      "hint": "'ICE'가 차가운 음료예요"
+    },
+    {
+      "id": "size",
+      "screen": "option",
+      "guide": "중간 사이즈 'M'을 골라 주세요",
+      "expect": "opt:size=M",
+      "hint": "S는 작은 컵, M은 중간 컵, L은 큰 컵이에요"
+    },
+    {
+      "id": "add",
+      "screen": "option",
+      "guide": "'담기'를 눌러 장바구니에 넣어 주세요",
+      "expect": "opt:add",
+      "hint": "화면 아래 파란 '담기' 버튼이에요"
+    },
+    {
+      "id": "qty",
+      "screen": "cart",
+      "guide": "'+' 버튼을 눌러 2잔으로 바꿔 주세요",
+      "expect": "cart:inc=vanilla_latte",
+      "hint": "바닐라라떼 줄 오른쪽의 '+'를 한 번 눌러요"
+    },
+    {
+      "id": "cart",
+      "screen": "cart",
+      "guide": "주문 내용을 확인하고 '카드 결제하기'를 눌러 주세요",
+      "expect": "cart:pay",
+      "hint": "바닐라라떼가 2잔인지 보고 아래 버튼을 눌러요"
+    },
+    {
+      "id": "insert",
+      "screen": "payment",
+      "guide": "카드를 꽂아 주세요",
+      "expect": "pay:insert",
+      "hint": "화면의 카드 그림을 눌러 보세요. 실제 결제는 되지 않아요"
+    },
+    {
+      "id": "done",
+      "screen": "payment",
+      "guide": "주문번호를 확인하고 '확인'을 눌러 주세요",
+      "expect": "done:ok",
+      "hint": "주문번호가 불리면 음료를 받으면 돼요"
+    }
+  ]
+}

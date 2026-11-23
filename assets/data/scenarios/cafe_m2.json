@@ -1,0 +1,70 @@
+{
+  "scenarioId": "cafe_m2",
+  "store": "cafe",
+  "title": "아이스 카페라떼 큰 사이즈 1잔, 샷 추가해서 포장",
+  "steps": [
+    {
+      "id": "start",
+      "screen": "kiosk_start",
+      "guide": "매장에서 드실지, 포장하실지 골라 주세요",
+      "expect": "start:takeout",
+      "hint": "오늘은 '포장'을 눌러 보세요"
+    },
+    {
+      "id": "menu",
+      "screen": "menu",
+      "guide": "'카페라떼'를 눌러 보세요",
+      "expect": "menu:latte",
+      "hint": "커피 탭 첫째 줄 오른쪽에 있어요"
+    },
+    {
+      "id": "temp",
+      "screen": "option",
+      "guide": "차가운 음료를 고르세요",
+      "expect": "opt:temp=ice",
+      "hint": "'ICE'가 차가운 음료예요"
+    },
+    {
+      "id": "size",
+      "screen": "option",
+      "guide": "큰 사이즈 'L'을 골라 주세요",
+      "expect": "opt:size=L",
+      "hint": "S는 작은 컵, L은 큰 컵이에요"
+    },
+    {
+      "id": "shot",
+      "screen": "option",
+      "guide": "샷 추가에서 '1샷 추가'를 골라 주세요",
+      "expect": "opt:shot=1",
+      "hint": "샷을 추가하면 커피 맛이 더 진해져요"
+    },
+    {
+      "id": "add",
+      "screen": "option",
+      "guide": "'담기'를 눌러 장바구니에 넣어 주세요",
+      "expect": "opt:add",
+      "hint": "화면 아래 파란 '담기' 버튼이에요"
+    },
+    {
+      "id": "cart",
+      "screen": "cart",
+      "guide": "주문 내용을 확인하고 '카드 결제하기'를 눌러 주세요",
+      "expect": "cart:pay",
+      "hint": "카페라떼 1잔이 맞는지 보고 아래 버튼을 눌러요"
+    },
+    {
+      "id": "insert",
+      "screen": "payment",
+      "guide": "카드를 꽂아 주세요",
+      "expect": "pay:insert",
+      "hint": "화면의 카드 그림을 눌러 보세요. 실제 결제는 되지 않아요"
+    },
+    {
+      "id": "done",
+      "screen": "payment",
+      "guide": "주문번호를 확인하고 '확인'을 눌러 주세요",
+      "expect": "done:ok",
+      "hint": "주문번호가 불리면 음료를 받으면 돼요"
+    }
+  ]
+}
