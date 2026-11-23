@@ -1,0 +1,63 @@
+{
+  "scenarioId": "burger_m2",
+  "store": "burger",
+  "title": "불고기버거 세트 1개, 음료는 콜라로 매장에서 먹기",
+  "steps": [
+    {
+      "id": "start",
+      "screen": "kiosk_start",
+      "guide": "매장에서 드실지, 포장하실지 골라 주세요",
+      "expect": "start:dinein",
+      "hint": "오늘은 '매장'을 눌러 보세요"
+    },
+    {
+      "id": "menu",
+      "screen": "menu",
+      "guide": "'불고기버거'를 눌러 보세요",
+      "expect": "menu:bulgogi",
+      "hint": "버거 탭 첫째 줄 왼쪽에 있어요"
+    },
+    {
+      "id": "set",
+      "screen": "option",
+      "guide": "'세트'를 골라 주세요",
+      "expect": "opt:set=set",
+      "hint": "세트는 버거에 감자튀김과 음료가 함께 나와요"
+    },
+    {
+      "id": "drink",
+      "screen": "option",
+      "guide": "세트 음료를 '콜라'로 골라 주세요",
+      "expect": "opt:drink=coke",
+      "hint": "음료 칸에서 '콜라'를 눌러요"
+    },
+    {
+      "id": "add",
+      "screen": "option",
+      "guide": "'담기'를 눌러 장바구니에 넣어 주세요",
+      "expect": "opt:add",
+      "hint": "화면 아래 파란 '담기' 버튼이에요"
+    },
+    {
+      "id": "cart",
+      "screen": "cart",
+      "guide": "주문 내용을 확인하고 '카드 결제하기'를 눌러 주세요",
+      "expect": "cart:pay",
+      "hint": "불고기버거 세트 1개가 맞는지 확인해요"
+    },
+    {
+      "id": "insert",
+      "screen": "payment",
+      "guide": "카드를 꽂아 주세요",
+      "expect": "pay:insert",
+      "hint": "화면의 카드 그림을 눌러 보세요. 실제 결제는 되지 않아요"
+    },
+    {
+      "id": "done",
+      "screen": "payment",
+      "guide": "주문번호를 확인하고 '확인'을 눌러 주세요",
+      "expect": "done:ok",
+      "hint": "주문번호가 불리면 음식을 받으면 돼요"
+    }
+  ]
+}

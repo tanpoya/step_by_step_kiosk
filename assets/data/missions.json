@@ -1,0 +1,312 @@
+[
+  {
+    "id": "cafe_m1",
+    "store": "cafe",
+    "level": "쉬움",
+    "title": "따뜻한 아메리카노 1잔, 매장에서 마시기",
+    "checklist": [
+      "아메리카노 고르기",
+      "HOT · S 사이즈",
+      "매장"
+    ],
+    "goal": {
+      "orderType": "dinein",
+      "items": [
+        {
+          "menu": "americano",
+          "options": {
+            "temp": "hot",
+            "size": "S",
+            "shot": "0"
+          },
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 60
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 90,
+      "queue": 3
+    }
+  },
+  {
+    "id": "cafe_m2",
+    "store": "cafe",
+    "level": "보통",
+    "title": "아이스 카페라떼 큰 사이즈 1잔, 샷 추가해서 포장",
+    "checklist": [
+      "카페라떼 고르기",
+      "ICE · 큰 사이즈",
+      "샷 추가 · 포장"
+    ],
+    "goal": {
+      "orderType": "takeout",
+      "items": [
+        {
+          "menu": "latte",
+          "options": {
+            "temp": "ice",
+            "size": "L",
+            "shot": "1"
+          },
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 90
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 120,
+      "queue": 3
+    }
+  },
+  {
+    "id": "cafe_m3",
+    "store": "cafe",
+    "level": "보통",
+    "title": "아이스 바닐라라떼 M 사이즈 2잔, 매장에서 마시기",
+    "checklist": [
+      "바닐라라떼 고르기",
+      "ICE · M 사이즈",
+      "수량 2잔 · 매장"
+    ],
+    "goal": {
+      "orderType": "dinein",
+      "items": [
+        {
+          "menu": "vanilla_latte",
+          "options": {
+            "temp": "ice",
+            "size": "M",
+            "shot": "0"
+          },
+          "qty": 2
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 90
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 120,
+      "queue": 3
+    }
+  },
+  {
+    "id": "cafe_m4",
+    "store": "cafe",
+    "level": "어려움",
+    "title": "따뜻한 카푸치노 1잔과 치즈케이크 1개 포장",
+    "checklist": [
+      "카푸치노 HOT · S",
+      "디저트 탭에서 치즈케이크",
+      "포장"
+    ],
+    "goal": {
+      "orderType": "takeout",
+      "items": [
+        {
+          "menu": "cappuccino",
+          "options": {
+            "temp": "hot",
+            "size": "S",
+            "shot": "0"
+          },
+          "qty": 1
+        },
+        {
+          "menu": "cheesecake",
+          "options": {},
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 120
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 150,
+      "queue": 3
+    }
+  },
+  {
+    "id": "burger_m1",
+    "store": "burger",
+    "level": "쉬움",
+    "title": "불고기버거 단품 1개 포장",
+    "checklist": [
+      "불고기버거 고르기",
+      "단품",
+      "포장"
+    ],
+    "goal": {
+      "orderType": "takeout",
+      "items": [
+        {
+          "menu": "bulgogi",
+          "options": {
+            "set": "single"
+          },
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 60
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 90,
+      "queue": 3
+    }
+  },
+  {
+    "id": "burger_m2",
+    "store": "burger",
+    "level": "보통",
+    "title": "불고기버거 세트 1개, 음료는 콜라로 매장에서 먹기",
+    "checklist": [
+      "불고기버거 고르기",
+      "세트 · 콜라",
+      "매장"
+    ],
+    "goal": {
+      "orderType": "dinein",
+      "items": [
+        {
+          "menu": "bulgogi",
+          "options": {
+            "set": "set",
+            "drink": "coke",
+            "side": "fries"
+          },
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 90
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 120,
+      "queue": 3
+    }
+  },
+  {
+    "id": "burger_m3",
+    "store": "burger",
+    "level": "보통",
+    "title": "치즈버거 세트 1개, 음료는 사이다, 사이드는 치즈스틱으로 바꿔서 포장",
+    "checklist": [
+      "치즈버거 고르기",
+      "세트 · 사이다",
+      "치즈스틱으로 변경 · 포장"
+    ],
+    "goal": {
+      "orderType": "takeout",
+      "items": [
+        {
+          "menu": "cheese",
+          "options": {
+            "set": "set",
+            "drink": "cider",
+            "side": "cheese_stick"
+          },
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 90
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 120,
+      "queue": 3
+    }
+  },
+  {
+    "id": "burger_m4",
+    "store": "burger",
+    "level": "어려움",
+    "title": "새우버거 단품 2개와 콜라 1잔, 매장에서 먹기",
+    "checklist": [
+      "새우버거 단품",
+      "수량 2개",
+      "음료 탭에서 콜라 · 매장"
+    ],
+    "goal": {
+      "orderType": "dinein",
+      "items": [
+        {
+          "menu": "shrimp",
+          "options": {
+            "set": "single"
+          },
+          "qty": 2
+        },
+        {
+          "menu": "coke",
+          "options": {},
+          "qty": 1
+        }
+      ]
+    },
+    "stars": {
+      "three": {
+        "maxMistakes": 0,
+        "maxSeconds": 120
+      },
+      "two": {
+        "maxMistakes": 2
+      }
+    },
+    "realMode": {
+      "timeLimitSec": 150,
+      "queue": 3
+    }
+  }
+]

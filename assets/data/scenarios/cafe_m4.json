@@ -1,0 +1,91 @@
+{
+  "scenarioId": "cafe_m4",
+  "store": "cafe",
+  "title": "따뜻한 카푸치노 1잔과 치즈케이크 1개 포장",
+  "steps": [
+    {
+      "id": "start",
+      "screen": "kiosk_start",
+      "guide": "매장에서 드실지, 포장하실지 골라 주세요",
+      "expect": "start:takeout",
+      "hint": "오늘은 '포장'을 눌러 보세요"
+    },
+    {
+      "id": "menu",
+      "screen": "menu",
+      "guide": "'카푸치노'를 눌러 보세요",
+      "expect": "menu:cappuccino",
+      "hint": "커피 탭 둘째 줄 오른쪽에 있어요"
+    },
+    {
+      "id": "temp",
+      "screen": "option",
+      "guide": "따뜻한 음료를 고르세요",
+      "expect": "opt:temp=hot",
+      "hint": "'HOT'이 따뜻한 음료예요"
+    },
+    {
+      "id": "size",
+      "screen": "option",
+      "guide": "작은 사이즈 'S'를 골라 주세요",
+      "expect": "opt:size=S",
+      "hint": "S는 작은 컵이에요. 이미 골라져 있어도 한 번 눌러 확인해요"
+    },
+    {
+      "id": "add",
+      "screen": "option",
+      "guide": "'담기'를 눌러 장바구니에 넣어 주세요",
+      "expect": "opt:add",
+      "hint": "화면 아래 파란 '담기' 버튼이에요"
+    },
+    {
+      "id": "more",
+      "screen": "cart",
+      "guide": "케이크도 사야 해요. '메뉴 더 담기'를 눌러 주세요",
+      "expect": "cart:more",
+      "hint": "장바구니 아래 '메뉴 더 담기' 버튼이에요"
+    },
+    {
+      "id": "tab",
+      "screen": "menu",
+      "guide": "위쪽의 '디저트' 탭을 눌러 주세요",
+      "expect": "tab:dessert",
+      "hint": "커피 · 음료 · 디저트 중 맨 오른쪽 탭이에요"
+    },
+    {
+      "id": "menu2",
+      "screen": "menu",
+      "guide": "'치즈케이크'를 눌러 보세요",
+      "expect": "menu:cheesecake",
+      "hint": "디저트 탭 첫째 줄 왼쪽에 있어요"
+    },
+    {
+      "id": "add2",
+      "screen": "option",
+      "guide": "'담기'를 눌러 장바구니에 넣어 주세요",
+      "expect": "opt:add",
+      "hint": "케이크는 고를 옵션이 없어요. 바로 '담기'를 눌러요"
+    },
+    {
+      "id": "cart",
+      "screen": "cart",
+      "guide": "주문 내용을 확인하고 '카드 결제하기'를 눌러 주세요",
+      "expect": "cart:pay",
+      "hint": "카푸치노 1잔과 치즈케이크 1개가 맞는지 확인해요"
+    },
+    {
+      "id": "insert",
+      "screen": "payment",
+      "guide": "카드를 꽂아 주세요",
+      "expect": "pay:insert",
+      "hint": "화면의 카드 그림을 눌러 보세요. 실제 결제는 되지 않아요"
+    },
+    {
+      "id": "done",
+      "screen": "payment",
+      "guide": "주문번호를 확인하고 '확인'을 눌러 주세요",
+      "expect": "done:ok",
+      "hint": "주문번호가 불리면 음료와 케이크를 받으면 돼요"
+    }
+  ]
+}

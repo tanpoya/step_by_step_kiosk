@@ -1,0 +1,173 @@
+{
+  "storeId": "burger",
+  "name": "차근 버거",
+  "defaultCategory": "burger",
+  "categories": [
+    {
+      "id": "burger",
+      "name": "버거",
+      "items": [
+        {
+          "id": "bulgogi",
+          "name": "불고기버거",
+          "price": 4500,
+          "image": "assets/images/menu/burger_bulgogi.png",
+          "options": [
+            "set",
+            "drink",
+            "side"
+          ]
+        },
+        {
+          "id": "cheese",
+          "name": "치즈버거",
+          "price": 5000,
+          "image": "assets/images/menu/burger_cheese.png",
+          "options": [
+            "set",
+            "drink",
+            "side"
+          ]
+        },
+        {
+          "id": "shrimp",
+          "name": "새우버거",
+          "price": 4800,
+          "image": "assets/images/menu/burger_shrimp.png",
+          "options": [
+            "set",
+            "drink",
+            "side"
+          ]
+        },
+        {
+          "id": "chicken",
+          "name": "치킨버거",
+          "price": 5200,
+          "image": "assets/images/menu/burger_chicken.png",
+          "options": [
+            "set",
+            "drink",
+            "side"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "side",
+      "name": "사이드",
+      "items": [
+        {
+          "id": "fries",
+          "name": "감자튀김",
+          "price": 2000,
+          "image": "assets/images/menu/burger_fries.png",
+          "options": []
+        },
+        {
+          "id": "cheese_stick",
+          "name": "치즈스틱",
+          "price": 2500,
+          "image": "assets/images/menu/burger_cheese_stick.png",
+          "options": []
+        },
+        {
+          "id": "nugget",
+          "name": "치킨너겟",
+          "price": 3000,
+          "image": "assets/images/menu/burger_nugget.png",
+          "options": []
+        }
+      ]
+    },
+    {
+      "id": "drink",
+      "name": "음료",
+      "items": [
+        {
+          "id": "coke",
+          "name": "콜라",
+          "price": 2000,
+          "image": "assets/images/menu/burger_coke.png",
+          "options": []
+        },
+        {
+          "id": "cider",
+          "name": "사이다",
+          "price": 2000,
+          "image": "assets/images/menu/burger_cider.png",
+          "options": []
+        },
+        {
+          "id": "orange_juice",
+          "name": "오렌지주스",
+          "price": 2500,
+          "image": "assets/images/menu/burger_orange_juice.png",
+          "options": []
+        }
+      ]
+    }
+  ],
+  "optionGroups": {
+    "set": {
+      "name": "단품 / 세트",
+      "required": true,
+      "choices": [
+        {
+          "id": "single",
+          "label": "단품",
+          "price": 0
+        },
+        {
+          "id": "set",
+          "label": "세트 (감자튀김 + 음료)",
+          "price": 2500
+        }
+      ]
+    },
+    "drink": {
+      "name": "세트 음료",
+      "required": true,
+      "showIf": {
+        "set": "set"
+      },
+      "choices": [
+        {
+          "id": "coke",
+          "label": "콜라",
+          "price": 0
+        },
+        {
+          "id": "cider",
+          "label": "사이다",
+          "price": 0
+        },
+        {
+          "id": "orange_juice",
+          "label": "오렌지주스",
+          "price": 500
+        }
+      ]
+    },
+    "side": {
+      "name": "세트 사이드",
+      "required": true,
+      "showIf": {
+        "set": "set"
+      },
+      "default": "fries",
+      "choices": [
+        {
+          "id": "fries",
+          "label": "감자튀김",
+          "price": 0
+        },
+        {
+          "id": "cheese_stick",
+          "label": "치즈스틱으로 변경",
+          "price": 500
+        }
+      ]
+    }
+  }
+}

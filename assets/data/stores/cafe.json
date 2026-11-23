@@ -1,0 +1,177 @@
+{
+  "storeId": "cafe",
+  "name": "차근 카페",
+  "defaultCategory": "coffee",
+  "categories": [
+    {
+      "id": "coffee",
+      "name": "커피",
+      "items": [
+        {
+          "id": "americano",
+          "name": "아메리카노",
+          "price": 3000,
+          "image": "assets/images/menu/cafe_americano.png",
+          "options": [
+            "temp",
+            "size",
+            "shot"
+          ]
+        },
+        {
+          "id": "latte",
+          "name": "카페라떼",
+          "price": 3500,
+          "image": "assets/images/menu/cafe_latte.png",
+          "options": [
+            "temp",
+            "size",
+            "shot"
+          ]
+        },
+        {
+          "id": "vanilla_latte",
+          "name": "바닐라라떼",
+          "price": 4000,
+          "image": "assets/images/menu/cafe_vanilla_latte.png",
+          "options": [
+            "temp",
+            "size",
+            "shot"
+          ]
+        },
+        {
+          "id": "cappuccino",
+          "name": "카푸치노",
+          "price": 3800,
+          "image": "assets/images/menu/cafe_cappuccino.png",
+          "options": [
+            "temp",
+            "size",
+            "shot"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "drink",
+      "name": "음료",
+      "items": [
+        {
+          "id": "lemonade",
+          "name": "레몬에이드",
+          "price": 4000,
+          "image": "assets/images/menu/cafe_lemonade.png",
+          "options": [
+            "size"
+          ],
+          "description": "얼음이 들어간 차가운 음료"
+        },
+        {
+          "id": "strawberry_latte",
+          "name": "딸기라떼",
+          "price": 4300,
+          "image": "assets/images/menu/cafe_strawberry_latte.png",
+          "options": [
+            "size"
+          ],
+          "description": "얼음이 들어간 차가운 음료"
+        },
+        {
+          "id": "green_tea",
+          "name": "녹차",
+          "price": 3000,
+          "image": "assets/images/menu/cafe_green_tea.png",
+          "options": [
+            "temp",
+            "size"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dessert",
+      "name": "디저트",
+      "items": [
+        {
+          "id": "cheesecake",
+          "name": "치즈케이크",
+          "price": 4500,
+          "image": "assets/images/menu/cafe_cheesecake.png",
+          "options": []
+        },
+        {
+          "id": "croissant",
+          "name": "크루아상",
+          "price": 3200,
+          "image": "assets/images/menu/cafe_croissant.png",
+          "options": []
+        },
+        {
+          "id": "cookie",
+          "name": "초코쿠키",
+          "price": 2000,
+          "image": "assets/images/menu/cafe_cookie.png",
+          "options": []
+        }
+      ]
+    }
+  ],
+  "optionGroups": {
+    "temp": {
+      "name": "온도",
+      "required": true,
+      "choices": [
+        {
+          "id": "hot",
+          "label": "HOT",
+          "price": 0
+        },
+        {
+          "id": "ice",
+          "label": "ICE",
+          "price": 0
+        }
+      ]
+    },
+    "size": {
+      "name": "사이즈",
+      "required": true,
+      "default": "S",
+      "choices": [
+        {
+          "id": "S",
+          "label": "S",
+          "price": 0
+        },
+        {
+          "id": "M",
+          "label": "M",
+          "price": 500
+        },
+        {
+          "id": "L",
+          "label": "L",
+          "price": 1000
+        }
+      ]
+    },
+    "shot": {
+      "name": "샷 추가",
+      "required": true,
+      "default": "0",
+      "choices": [
+        {
+          "id": "0",
+          "label": "추가 안 함",
+          "price": 0
+        },
+        {
+          "id": "1",
+          "label": "1샷 추가",
+          "price": 500
+        }
+      ]
+    }
+  }
+}
